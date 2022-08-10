@@ -1,229 +1,802 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
+	<meta name="generator" content="Hugo 0.101.0" />
+  <meta charset="utf-8" />
+  <title>Portio</title>
 
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; block-all-mixed-content; default-src 'self'; child-src 'self'; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net/; form-action 'self'; frame-src 'self'; img-src 'self'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/ https://cdn.jsdelivr.net/; script-src 'self' 'unsafe-inline' https://www.google-analytics.com https://cdn.jsdelivr.net/; prefetch-src 'self'; connect-src 'self' https://www.google-analytics.com;">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="https://msjaison.in/plugins/slick/slick.css" />
+  <link rel="stylesheet" href="https://msjaison.in/plugins/slick/slick-theme.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://msjaison.in/plugins/font-awesome/css/font-awesome.min.css" />
 
+  <!-- Magnific Popup -->
+  <link rel="stylesheet" href="https://msjaison.in/plugins/magnafic-popup/magnific-popup.css" />
 
-
-
-<meta name="author" content="Mirtunjay Kumar">
-<meta name="description" content="Mirtunjay Kumar personal website">
-<meta name="keywords" content="blog,developer,personal, sre, engineer">
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="msjaison"/>
-<meta name="twitter:description" content="Mirtunjay Kumar personal website"/>
-
-<meta property="og:title" content="msjaison" />
-<meta property="og:description" content="Mirtunjay Kumar personal website" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://msjaison.in/" />
-
-
-
-
-  <title>msjaison</title>
-
+  <!-- Stylesheets -->
   
-  <link rel="canonical" href="http://msjaison.in/">
+  <link href="https://msjaison.in/scss/style.min.css" rel="stylesheet" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="https://msjaison.in/images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="https://msjaison.in/images/favicon.png" type="image/x-icon" />
   
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR%20GOOGLE%20ANALYTICS%20CODE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  <link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
-
-
+    gtag('config', 'YOUR GOOGLE ANALYTICS CODE');
+  </script>
   
-  
-  <link rel="stylesheet" href="/css/coder.min.6b1a4fbc48955b72aea7913e43fabeb45e8bc120da5aa41b598dd33adcac4b59.css" integrity="sha256-axpPvEiVW3Kup5E&#43;Q/q&#43;tF6LwSDaWqQbWY3TOtysS1k=" crossorigin="anonymous" media="screen" />
-
-
-
-
-
-  
-  
-    
-    
-    <link rel="stylesheet" href="/css/coder-dark.min.39e41a7f16bdf8cb16e43cae7d714fa1016f1d2d2898a5b3f27f42c9979204e2.css" integrity="sha256-OeQafxa9&#43;MsW5DyufXFPoQFvHS0omKWz8n9CyZeSBOI=" crossorigin="anonymous" media="screen" />
-  
-
-
-
-   
-
-
-
-
-  <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
-
-
-  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="msjaison" />
-
-
-  <meta name="generator" content="Hugo 0.101.0" />
-
-
-  
-
 </head>
 
-
-
-
-
-
-
-<body class="preload-transitions colorscheme-auto">
-  
-<div class="float-container">
-    <a id="dark-mode-toggle" class="colorscheme-toggle">
-        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a href="https://msjaison.in" class="navbar-brand">
+      <img src="https://msjaison.in/images/site-navigation/logo.png" alt="site-logo">
     </a>
-</div>
+    <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-
-  <main class="wrapper">
-    <nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="/">
-      msjaison
-    </a>
-    
-      <input type="checkbox" id="menu-toggle" />
-      <label class="menu-button float-right" for="menu-toggle">
-        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
-      </label>
-      <ul class="navigation-list">
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+      <ul class="nav navbar-nav main-navigation my-0 mx-auto">
         
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/about/">About</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/projects/">Projects</a>
-            </li>
-          
-            <li class="navigation-item">
-              <a class="navigation-link" href="/contact/">Contact me</a>
-            </li>
-          
         
+        <li class="nav-item">
+          <a href="https://msjaison.in#home"
+            class="nav-link text-dark text-sm-center p-2 scroll">Home</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://msjaison.in#about"
+            class="nav-link text-dark text-sm-center p-2 scroll">About</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://msjaison.in#service"
+            class="nav-link text-dark text-sm-center p-2 scroll">Service</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://msjaison.in#portfolio"
+            class="nav-link text-dark text-sm-center p-2 scroll">Work</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://msjaison.in#resume"
+            class="nav-link text-dark text-sm-center p-2 scroll">Resume</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://msjaison.in#skills"
+            class="nav-link text-dark text-sm-center p-2 scroll">Skills</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://msjaison.in#blog"
+            class="nav-link text-dark text-sm-center p-2 scroll">Blog</a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="https://msjaison.in#contact"
+            class="nav-link text-dark text-sm-center p-2 scroll">Contact</a>
+        </li>
         
       </ul>
-    
-  </section>
+      <div class="navbar-nav">
+        <a href="https://msjaison.in/contact" class="btn btn-primary btn-zoom hire_button">Hire Me Now</a>
+      </div>
+    </div>
+  </div>
 </nav>
-
-
-    <div class="content">
-      
-  <section class="container centered">
-  <div class="about">
+  <div id="content">
     
-  
-    <div class="avatar"><img src="/images/profile.png" alt="avatar"></div>
-  
 
 
 
+<section class="hero" id="home">
+  <div class="hero_background-svg">
+    <svg viewBox="0 0 1437 1180">
+      <path fill="#f1f6f9" d="M0 0h1377l60 1010a120 120 0 01-120 120L0 1180z" data-name="Path 1350" />
+    </svg>
+  </div>
+  <div class="hero_footer-svg">
+    <img src="images/hero/figure-svg.svg" alt="" />
+  </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="hero_content">
+          <div class="hero_blob">
+            <svg viewBox="0 0 550 550">
+              <defs>
+                <linearGradient id="a" x1=".069" x2=".753" y1=".116" y2=".858" gradientUnits="objectBoundingBox">
+                  <stop offset="0" stop-color="#fff" />
+                  <stop offset="1" stop-color="#fff" stop-opacity=".012" />
+                </linearGradient>
+              </defs>
+              <g data-name="blob-shape (3)">
+                <path class="blob" fill="url(#a)"
+                  d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+              </g>
+            </svg>
+          </div>
+          <div class="mb-5">
+            <span class="top-title pre-line">Hello, I am Mirtunjay</span>
+            <h1 id="i-am-here-for-making-things-reliable-and-smooth">I am here for making things reliable and smooth</h1>
+<p>Automation is the way forward
+          </div>
+          <a type="button" class="btn btn-lg btn-primary btn-zoom"
+            href="https://msjaison.in/contact">Contact me</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="hero_figure">
+          <div class="figure-svg">
+            <img src="images/hero/figure-svg.svg" alt="figure-svg" />
+          </div>
+          <img src="https://msjaison.in/images/hero/2960351.jpg" alt="hero-image" style='
+                  -webkit-mask: url(https://msjaison.in/images/hero/hero-mask-svg.png);
+                  -webkit-mask-repeat: no-repeat;
+                  -webkit-mask-size: contain;
+                  -webkit-mask-position: center center;
+                ' />
 
-    <h1>Mirtunjay Kumar</h1>
+          
+          <div class="hero_figure-popup">
+            <div class="thumb">
+              <img src="images/hero/popup-thumb.png" alt="popup" />
+            </div>
 
-<h2>Site Reliability Engineer<br>DevOps<br></h2>
-
-
-
-    
-<ul>
-  
-    
-      <li>
-        <a href="https://github.com/msJaison135" aria-label="Github"   >
-          <i class="fa fa-2x fa-github" aria-hidden="true"></i>
-        </a>
-      </li>
-    
-  
-    
-      <li>
-        <a href="https://gitlab.com/msjaison" aria-label="Gitlab"   >
-          <i class="fa fa-2x fa-gitlab" aria-hidden="true"></i>
-        </a>
-      </li>
-    
-  
-    
-      <li>
-        <a href="https://twitter.com/msjaison" aria-label="Twitter"   >
-          <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
-        </a>
-      </li>
-    
-  
-    
-      <li>
-        <a href="https://www.linkedin.com/in/msjaison" aria-label="LinkedIn"   >
-          <i class="fa fa-2x fa-linkedin" aria-hidden="true"></i>
-        </a>
-      </li>
-    
-  
-</ul>
-
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="button" class="popup-button text-center big">
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 24">
+                <path d="M17.961 10.264a2 2 0 010 3.473L2.992 22.29A2 2 0 010 20.554V3.446A2 2 0 012.992 1.71z"
+                  data-name="Polygon 4" />
+              </svg>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 
+
+
+
+<section class="section about" id="about">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="about_header mb-5">
+                    <span class="top-title">About</span>
+                    <h2 id="about-me">About me</h2>
+<p>Enjoy the product reliablity and building the solutions for customers
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="about_content">
+                    <div class="about_content-thumb">
+                        <div class="about-svg">
+                            <img src="images/hero/figure-svg.svg" alt="figure-svg">
+                        </div>
+                        <div class="about_content-thumb-image">
+                            <img src="https://msjaison.in/images/about/about-img.jpg" alt="about-img"
+                                style='-webkit-mask: url(https://msjaison.in/images/about/about-mask-svg.svg); -webkit-mask-size: contain;'>
+                        </div>
+                    </div>
+                    <div class="about_content-inner">
+                        <div class="about_content-inner-blob">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 600 600">
+                                <defs>
+                                    <linearGradient id="c" x1="0.929" y1="0.111" x2="0.263" y2="0.935"
+                                        gradientUnits="objectBoundingBox">
+                                        <stop offset="0" stop-color="#f1f6f9" />
+                                        <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+                                    </linearGradient>
+                                </defs>
+                                <g data-name="blob-shape (3)">
+                                    <path class="blob" fill="url(#c)"
+                                        d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="mb-4 text-light">
+                            <h3 id="my-customers-are-developers-work-is-to-enable-them">My customers are Developers, Work is to enable them.</h3>
+<p>Find problems build solutions and repeat, Making systems reliable, bothering devs to optimise and secure the app are kinda my thing, IDP&rsquo;s are my bestfriend
+                        </div>
+                        <div>
+                            <a class="btn btn-primary mr-3 btn-zoom"
+                                href="https://msjaison.in/contact">Hire me</a>
+                            <a class="btn btn-outline-primary btn-zoom" href="https://msjaison.in/contact">
+                                Download CV </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="section service" id="service">
+    <div class="service__background">
+        <svg viewBox="0 0 1283 1126">
+            <path fill="#f1f6f9" d="M100 0h1183v1126l-1183-80A100 100 0 010 946V100A100 100 0 01100 0z"
+                data-name="Path 1369" />
+        </svg>
+    </div>
+    <div class="service__background_shape">
+        <svg viewBox="0 0 550 550">
+            <defs>
+                <linearGradient id="b" x1="0.209" y1="0.085" x2="1.071" y2="1.164" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#f1f6f9" />
+                    <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            <g data-name="blob-shape (3)">
+                <path class="blob" fill="url(#b)"
+                    d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+            </g>
+        </svg>
     </div>
 
-    <footer class="footer">
-  <section class="container">
-    ©
-    
-      2018 -
-    
-    2022
-     Mirtunjay Kumar 
-    
-  </section>
-</footer>
+    <div class="service__background_pattern">
+        <img src="images/service/background-pattern.svg" alt="background-pattern">
+    </div>
 
-  </main>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="service__header mb-5">
+                    <span class="top-title pre-line">Working Area</span>
+                    <h2 id="creative-services">Creative Services</h2>
+<p>Making Develops incharge of their application with no blocker and improving Reliability
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="service__slider">
+                    
+                    
+                    <div class="service__slider_item">
+                        <div class="service__slider_item-icon">
+                            <div class="icon-background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
+                                    viewBox="0 0 122.457 109.702">
+                                    <path fill="#f1f6f9"
+                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
+                                        data-name="Path 1354" />
+                                </svg>
+                            </div>
+                            <div class="icon">
+                                <img src=" https://msjaison.in/images/service/ui-ux.svg " alt="ui-ux">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h4 id="solution-architect">Solution Architect</h4>
+<p>Provisioning Infrastructure with High availibitity, Reliability, Latency, Cost Optimisation in mind
+                        </div>
+                    </div>
+                    
+                    <div class="service__slider_item">
+                        <div class="service__slider_item-icon">
+                            <div class="icon-background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
+                                    viewBox="0 0 122.457 109.702">
+                                    <path fill="#f1f6f9"
+                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
+                                        data-name="Path 1354" />
+                                </svg>
+                            </div>
+                            <div class="icon">
+                                <img src=" https://msjaison.in/images/service/web.svg " alt="ui-ux">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h4 id="alerting--monitoring">Alerting &amp; Monitoring</h4>
+<p>Setting up robust alerting so incidents can be tackled before they become incidents
+                        </div>
+                    </div>
+                    
+                    <div class="service__slider_item">
+                        <div class="service__slider_item-icon">
+                            <div class="icon-background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
+                                    viewBox="0 0 122.457 109.702">
+                                    <path fill="#f1f6f9"
+                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
+                                        data-name="Path 1354" />
+                                </svg>
+                            </div>
+                            <div class="icon">
+                                <img src=" https://msjaison.in/images/service/creative.svg " alt="ui-ux">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h4 id="dockerise-env">Dockerise Env</h4>
+<p>Set up Dockerise env based on micro services followed by latest tech in market
+                        </div>
+                    </div>
+                    
+                    <div class="service__slider_item">
+                        <div class="service__slider_item-icon">
+                            <div class="icon-background">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="122.457" height="109.702"
+                                    viewBox="0 0 122.457 109.702">
+                                    <path fill="#f1f6f9"
+                                        d="M49.855527 9.984102c-4.337424-.815024-8.766002-1.633779-13.152776-1.113889-8.196034.975107-15.344329 6.696991-19.41555 13.879649s-5.363288 15.655094-5.187042 23.907191c.156996 7.385448 1.479849 14.875357 4.972905 21.38465s9.337384 11.961229 16.458344 13.922244c4.833752 1.331211 10.056683 1.044827 14.74081 2.829827 7.560693 2.881382 12.209757 10.489626 19.01235 14.870016a25.650039 25.650039 0 0024.16316 1.698928c8.342551-3.846451 14.03857-12.107291 16.641338-20.918947s2.471077-18.187687 1.756125-27.346305c-.843101-10.912846-3.01686-22.783019-11.354287-29.869462-6.037066-5.130853-14.208558-6.772976-21.995428-8.235353z"
+                                        data-name="Path 1354" />
+                                </svg>
+                            </div>
+                            <div class="icon">
+                                <img src=" https://msjaison.in/images/service/branding.svg " alt="ui-ux">
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h4 id="high-availibility">High Availibility</h4>
+<p>Making sure 99.X % Uptime in Production where your customer doesn&rsquo;t has to face any downtime while deploying new feature or recovering from outage.
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-  
-  
-  <script src="/js/coder.min.236049395dc3682fb2719640872958e12f1f24067bb09c327b233e6290c7edac.js" integrity="sha256-I2BJOV3DaC&#43;ycZZAhylY4S8fJAZ7sJwyeyM&#43;YpDH7aw="></script>
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+<section class="section resume" id="resume">
+    <div class="resume__background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="resume__heading">
+                    <div class="text-light">
+                        <span class="top-title pre-line">My Resume</span>
+                        <h2 id="my-expertises">My Expertises</h2>
+<p>SRE with hands on experience on all level of env including performance, functional, Integration and system. Worked in Gaming, AI &amp; e-commerce Industries
+                    </div>
 
-  
+                    <div class="btn-group nav mt-5">
+                        <a href="#education" class="btn btn-primary active" data-toggle="tab">Education</a>
+                        <a href="#experience" class="btn btn-primary" data-toggle="tab">Experiences</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="tab-content ">
+                    <div class="resume__education tab-pane active" id="education">
+                        
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2022 </span>
+                            <h4 id="terraform-certified">Terraform Certified</h4>
+<p>Certified Terraform Associate
+                        </div>
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2021 </span>
+                            <h4 id="cka">CKA</h4>
+<p>Certified Kubernetes Administrator Credentials:- LF-xj12b94ira
+                        </div>
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2018 </span>
+                            <h4 id="rhcsa">RHCSA</h4>
+<p>Red Hat Certified System Engineer with 100% Marks Credentials:-180012023
+                        </div>
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2014-2017 </span>
+                            <h4 id="bachelor-of-science-computer-science">Bachelor of Science [Computer Science]</h4>
+<p>Completed full time regular graduation from Ruhelkhand University
+                        </div>
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2016 </span>
+                            <h4 id="ccc-certified">CCC Certified</h4>
+<p>Certified in Course in Computer Science from NIELT University Credentials:- SNADD41259BCD503
+                        </div>
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2013-14 </span>
+                            <h4 id="xii-cse">XII CSE</h4>
+<p>Completed my intermediate from CBSE in Computer Science
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="resume__education tab-pane" id="experience">
+                        
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2021-Present </span>
+                            <h4 id="olx-india-pvt-ltd">Olx India Pvt Ltd</h4>
+<p>I&rsquo;m currently working here as Site Reliability Engineer, Olx is e-commerece plateform for Automobile Industry and backed by Naspers
+                        </div>
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2019-21 </span>
+                            <h4 id="netomi--formerly-msgai-">Netomi ( formerly MSG.AI )</h4>
+<p>I was working here as Site Reliability Engineer. Netomi is a start-up which deal in AI Chat bots and now leaning towards becoming rocketship and leader in domain
+                        </div>
+                        
+                        <div class="resume__education_item">
+                            <span class="pre-line text-primary"> 2018-19 </span>
+                            <h4 id="skilrock-technology-pvt-ltd">Skilrock Technology Pvt ltd.</h4>
+<p>I was working here as Technical Support Engineer. Skilrock is Gaming based Industry backed up Sugal &amp; Damani Group.
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="section skill", id="skills">
+    <div class="skill__background_shape">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+            <defs>
+                <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
+                    <stop offset="0" stop-color="#f1f6f9" />
+                    <stop offset="1" stop-color="#f1f6f9" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            <g data-name="blob-shape (3)">
+                <path class="blob" fill="url(#d)"
+                    d="M455.4 151.1c43.1 36.7 73.4 92.8 60.8 136.3-12.7 43.5-68.1 74.4-111.3 119.4-43.1 45-74 104.1-109.8 109-35.9 5-76.7-44.2-111.8-89.2-35.2-45-64.7-85.8-70.8-132.6-6-46.8 11.6-99.6 46.7-136.3 35.2-36.6 88-57.2 142.4-58.8 54.5-1.7 110.6 15.6 153.8 52.2z" />
+            </g>
+        </svg>
+    </div>
+    <div class="skill__background_pattern">
+        <img src="images/service/background-pattern.svg" alt="background-shape">
+    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="skill__thumb">
+                    <div class="skill__thumb_pattern">
+                        <img src="images/hero/figure-svg.svg" alt="figure-svg">
+                    </div>
+                    <div class="skill__thumb_image">
+                        <img src="https://msjaison.in/images/skill/skill_image.jpg" alt="skill-img" style='
+                                        -webkit-mask: url(https://msjaison.in/images/skill/skill-mask-svg.svg);
+                                        -webkit-mask-repeat: no-repeat;
+                                        -webkit-mask-size: contain;
+                                        -webkit-mask-position: center center;
+                                    '>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="skill__progress">
+                    <div class="skill__progress_heading mb-5">
+                        <span class="top-title pre-line">My Skills</span>
+                        <h2 id="why-hire-me-for-your-next-project">Why hire me for your next project?</h2>
+<p>My goal is to build IDP&rsquo;s/Solutions that enables Devs to deliver super fast without any blocker and focusing on product reliability, Security while delivering new features on the go.
+                    </div>
+                    
+                    
+                    <div class="skill__progress_item">
+                        <span class="d-inline-block text-dark"> Python </span>
+                        <div class="progress-value float-right"><span>80</span>%</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:80%;" aria-valuemin="0"
+                                aria-valuemax="80"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill__progress_item">
+                        <span class="d-inline-block text-dark"> Bash </span>
+                        <div class="progress-value float-right"><span>100</span>%</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:100%;" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill__progress_item">
+                        <span class="d-inline-block text-dark"> Javascript </span>
+                        <div class="progress-value float-right"><span>70</span>%</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:70%;" aria-valuemin="0"
+                                aria-valuemax="70"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill__progress_item">
+                        <span class="d-inline-block text-dark"> AWS </span>
+                        <div class="progress-value float-right"><span>90</span>%</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:90%;" aria-valuemin="0"
+                                aria-valuemax="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill__progress_item">
+                        <span class="d-inline-block text-dark"> Databases </span>
+                        <div class="progress-value float-right"><span>70</span>%</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:70%;" aria-valuemin="0"
+                                aria-valuemax="70"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill__progress_item">
+                        <span class="d-inline-block text-dark"> K8s </span>
+                        <div class="progress-value float-right"><span>90</span>%</div>
+                        <div class="progress">
+                            <div class="progress-bar" style="width:90%;" aria-valuemin="0"
+                                aria-valuemax="90"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="section testimonial">
+    <div class="testimonial__background_shape">
+        <svg viewBox="0 0 1920 79">
+            <path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+        </svg>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="testimonial__header">
+                    <span class="top-title">Testimonials</span>
+                    <h2 id="what-people-say-about-me">What People Say About Me?</h2>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="testimonial__slider">
+                    
+                    
+                    <div class="testimonial__slider_item">
+                        
+                        <ul class="testimonial__slider_item-rating">
+                            
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                        </ul>
+                        
+                        <p class="testimonial__slider_item-content"> i worked with Mirtunjay in a team. He is passionate towards work. </p>
+                        <p class="testimonial__slider_item-author"><span>Vinit Garg</span> | Nov 19, 2019</p>
+                    </div>
+                    
+                    <div class="testimonial__slider_item">
+                        
+                        <ul class="testimonial__slider_item-rating">
+                            
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                            
+                            <li><i class="fa fa-star"></i></li>
+                            
+                            
+                            
+                            <li><i class="fa fa-star inactive"></i></li>
+                            
+                            
+                        </ul>
+                        
+                        <p class="testimonial__slider_item-content"> Proactively handeling all Develops queries and enabling continous support to Devs </p>
+                        <p class="testimonial__slider_item-author"><span>Sumit Garg</span> | Jan 4, 2022</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+ 
+
+
+  </div>
+  <section class="footer" id="contact">
+	<div class="footer__background_shape">
+		<svg viewBox="0 0 1920 79">
+			<path d="M0 0h1920v79L0 0z" data-name="Path 1450" />
+		</svg>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="footer__cta">
+					<div class="shape-1">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="shape-2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="357" height="315.029" viewBox="0 0 357 315.029">
+							<path data-name="Path 1449"
+								d="M76.1-157.222C91.746-135.8 87.2-94.273 99.993-61.945c12.7 32.328 42.661 55.459 39.248 73.282-3.318 17.823-40.007 30.337-65.6 43.325-25.5 12.988-39.912 26.545-60.01 42.566-20.1 16.116-46.074 34.6-63.328 27.682-17.349-6.921-25.976-39.153-59.915-59.82s-93.1-29.768-105.325-51.478 22.373-56.028 43.609-93.949c21.331-37.921 29.2-79.35 53.563-96.793 24.459-17.444 65.414-10.9 103.9-6.921 38.396 3.982 74.326 5.404 89.965 26.829z"
+								transform="translate(217.489 188.626)" />
+						</svg>
+					</div>
+					<div class="text-light footer__cta_content">
+						<span>Contact me</span>
+						<h2 class="mb-0">Let’s Start a Project</h2>
+					</div>
+					<div class="footer__cta_action">
+						<a class="btn btn-light btn-zoom" href="https://msjaison.in/contact">Get in
+							touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__widget">
+			<div class="col-lg-4">
+				<div class="footer__widget_logo mb-5">
+					<img src="https://msjaison.in/images/contact/logo.png" alt="widget-logo">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_sitemap mb-5">
+					<h4 class="base-font">Sitemap</h4>
+					<ul class="unstyle-list small">
+						
+						
+						<li class="mb-2"><a class="text-light" href="https://msjaison.in/about">About me</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://msjaison.in">Frequently Ask Question</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://msjaison.in">Privacy &amp; Policy</a></li>
+						
+						<li class="mb-2"><a class="text-light" href="https://msjaison.in">Latest Article</a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="text-light footer__widget_address mb-5">
+					<h4 class="base-font">Address</h4>
+					
+					<ul class="fa-ul small">
+						<li class="mb-2"><a class="text-light" href="tel:&#43;91%2088512922XX"><span class="fa-li"><i
+										class="fa fa-phone"></i></span>&#43;91 88512922XX</a></li>
+						<li class="mb-2"><a class="text-light" href="mailto:msjaison@msjaison.in"><span class="fa-li"><i
+										class="fa fa-envelope"></i></span>msjaison@msjaison.in</a></li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>Sector 111, Gurugram, 122017</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row footer__footer">
+			<div class="col-lg-6">
+				<div class="footer__footer_copy text-light">
+					<p>All right reserved copyright © msjaison 2020</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="footer__footer_social">
+					<ul class="unstyle-list">
+						
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.facebook.com/msjaison/"><i
+									class="fa fa-facebook-official"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://www.linkedin.com/in/msjaison"><i
+									class="fa fa-linkedin-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://in.pinterest.com/msjaison/"><i
+									class="fa fa-pinterest-square"></i></a>
+						</li>
+						
+						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="https://twitter.com/msjaison"><i
+									class="fa fa-twitter-square"></i></a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR%20GOOGLE%20MAP%20API&libraries=geometry"></script>
+<script src="https://msjaison.in/plugins/jQuery/jquery.min.js"></script>
+<script src="https://msjaison.in/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="https://msjaison.in/plugins/slick/slick.min.js"></script>
+<script src="https://msjaison.in/plugins/waypoint/jquery.waypoints.min.js"></script>
+<script src="https://msjaison.in/plugins/magnafic-popup/jquery.magnific-popup.min.js"></script>
+<script src="https://msjaison.in/plugins/tweenmax/TweenMax.min.js"></script>
+<script src="https://msjaison.in/plugins/imagesloaded/imagesloaded.min.js"></script>
+<script src="https://msjaison.in/plugins/masonry/masonry.min.js"></script>
+
+<script src="https://msjaison.in/js/form-handler.min.js"></script>
+
+<script src="https://msjaison.in/js/script.min.js"></script>
+
 </body>
 
 </html>
